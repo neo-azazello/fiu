@@ -1,9 +1,50 @@
 {% extends 'website/rightsidebarlayout.twig' %}
 
 {% block content %}
+<div class="content-container">
+
+    <div class="main-title">
+        <h1 class="main-title__primary">Fəaliyyət üzrə İllik Hesabat</h1>
+    </div>
+
+    <article>
+        <p style="text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Azərbaycan Respublikası Prezidentinin
+            2018-ci&nbsp;il 04&nbsp;oktyabr&nbsp;tarixli Fərmanı ilə təsdiq edilmiş Azərbaycan Respublikasının Maliyyə
+            Bazarlarına Nəzarət Palatasının Nizamnaməsinin 2.1-ci bəndinə əsasən,&nbsp; onun mühüm vəzifələrindən biri
+            maliyyə bazarlarında istehlakçıların və investorların hüquqlarını müdafiə etməkdir. Bununla əlaqədar, Palata
+            istehlakçıların və investorların hüquqlarının müdafiəsi sahəsində aşağıdakı hüquq və vəzifələri həyata
+            keçirir:</p>
+        <ul>
+            <li style="text-align: justify;">maliyyə bazarlarında investorların və istehlakçıların hüquqlarının&nbsp;
+                müdafiəsini, onların pozulmuş hüquqlarının bərpa olunmasını təmin etmək məqsədilə Palatanın nəzarət
+                etdiyi subyektlərdən və emitentlərdən sənədlər və məlumatlar alır, onların təhlilini
+                aparır;&nbsp;&nbsp;&nbsp;</li>
+            <li style="text-align: justify;">qanunvericiliyi pozan şəxsləri inzibati məsuliyyətə cəlb edir;</li>
+            <li style="text-align: justify;">səhmdar cəmiyyətlərində korporativ idarəetmənin təkmilləşdirilməsi ilə
+                bağlı müvafiq tədbirləri həyata keçirir;</li>
+            <li style="text-align: justify;">emitentlərdən hesabatları qəbul edir, onları təhlil edir və
+                qanunvericiliklə müəyyən edilmiş qaydada müvafiq tədbirlər görür;</li>
+            <li style="text-align: justify;">investorlardan və maliyyə bazarlarının istehlakçılarından Palataya daxil
+                olmuş ərizə və şikayətlərə baxır, onları təhlil edir və qanunvericiliklə müəyyən edilmiş qaydada
+                araşdırmalar aparmaqla müvafiq tədbirlər görür;</li>
+            <li style="text-align: justify;">investorların və maliyyə bazarının istehlakçılarının maarifləndirməsi üzrə
+                müvafiq tədbirlər həyata keçirir;</li>
+            <li style="text-align: justify;">investorların və maliyyə bazarlarınında istehlakçıların&nbsp; hüquqlarının
+                pozulması ilə bağlı məhkəmə instansiyalarında&nbsp; iştirak edir;</li>
+            <li style="text-align: justify;">maliyyə bazarlarında istehlakçıların və investorların hüquqlarının
+                müdafiəsi sahəsində qanun pozuntularının qarşısının alınması, onların&nbsp; pozulmuş hüquqlarının bərpa
+                olunması məqsədi ilə icrası məcburi olan göstərişlər verir.</li>
+        </ul>
+        <p style="text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp;</p>
+        <div class="row as-10 sm-5 xs-5"></div>
+    </article>
+</div>
 {% endblock %}
 
 
 {% block sidebar %}
+<nav class="main-navigation__container">
+    <div class="main-navigation__title"> Hesabatlar və Nəşrlər</div>
     {% include 'website/hesabatlar/sidebar.twig'%}
+</nav>
 {% endblock %}

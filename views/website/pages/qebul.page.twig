@@ -1,0 +1,131 @@
+{% extends 'website/layout.twig' %}
+
+{% block content %}
+<div class="content-container">
+
+    <div class="main-title">
+        <h1 class="main-title__primary">
+            Vətəndaşların qəbul qrafiki
+        </h1>
+    </div>
+
+    <article>
+        <div class="panel-grid row">
+
+            <div class="col-md-12 panel-grid-cell">
+                <div class="so-panel panel-first-child panel-last-child">
+                    <div class="textwidget text-intro">
+                        <table class="table table-striped table-bordered table-hover table-responsive">
+                            <tbody>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Qəbul edən şəxs</th>
+                                    <th>Bazar ertəsi</th>
+                                    <th>Çərşənbə axşamı</th>
+                                    <th>Çərşənbə</th>
+                                    <th>Cümə axşamı</th>
+                                    <th>Cümə</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>İdarə Heyətinin sədri </td>
+                                    <td>-</td>
+                                    <td>16:<sup>00</sup>-18:<sup>00</sup></td>
+                                    <td>-</td>
+                                    <td>11:<sup>00</sup>-13:<sup>00</sup></td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Nəzarət departamenti</td>
+                                    <td>10:<sup>00</sup>-13:<sup>00</sup></td>
+                                    <td>10:<sup>00</sup>-13:<sup>00</sup></td>
+                                    <td>10:<sup>00</sup>-13:<sup>00</sup></td>
+                                    <td>10:<sup>00</sup>-13:<sup>00</sup></td>
+                                    <td>10:<sup>00</sup>-13:<sup>00</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Hüquq departamenti</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>14:<sup>00</sup>-16:<sup>00</sup></td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Məlumatların dəstəklənməsi departamenti</td>
+                                    <td>14:<sup>00</sup>-16:<sup>00</sup></td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>14:<sup>00</sup>-16:<sup>00</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Məlumatların təhlili departamenti</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>14:<sup>00</sup>-16:<sup>00</sup></td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Əməkdaşlıq departamenti</td>
+                                    <td>16:<sup>00</sup>-18:<sup>00</sup></td>
+                                    <td>14:<sup>00</sup>-16:<sup>00</sup></td>
+                                    <td>16:<sup>00</sup>-18:<sup>00</sup></td>
+                                    <td>16:<sup>00</sup>-18:<sup>00</sup></td>
+                                    <td>16:<sup>00</sup>-18:<sup>00</sup></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <div class="alert alert-warning">
+                            <p>Vətəndaşların qəbul olunmasına dair məsul şəxs Azərbaycan Respublikasının Maliyyə
+                                Monitorinqi Xidmətinin Katiblik şöbəsinin müdiri <strong>Sevinc Dadaşova</strong> təyin
+                                edilmişdir.
+                                <strong>Əlaqə telefonu: (012) 598 19 46</strong></p>
+                            <p>Telefon müraciət xidməti vasitəsilə şifahi müraciətlərin edilməsi, qəbulu, qeydiyyatı və
+                                cavablandırılmasına dair məsul şəxs <strong>Sevinc Dadaşova</strong> təyin edilmişdir.
+                                <strong>Əlaqə telefonu: (012) 598 19 46</strong></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+</div>
+
+
+
+{% endblock %}
+
+{% block sidebar %}
+<div class="widget  widget-skype">
+    <a class="skype-button" href="{{path_for('registry')}}">
+        <i class="fa fa-globe"></i>
+        <p class="skype-button__title">Elektron reyestr</p>
+    </a>
+</div>
+
+{% include 'website/include/sidebarmenu.twig' %}
+{% include 'website/widgets/qebul-qrafiki.twig' %}
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <a target="_blank" href="http://www.taxes.gov.az/modul.php?name=pages&amp;page=230">
+            <i class="fa fa-3x fa-book panel-icon" style="margin-right: 10px;"></i>
+            Maliyyə Monitorinqi Xidmətinin məlumat bazasına qoşulma qaydaları
+        </a>
+    </div>
+</div>
+
+{% include 'website/widgets/hotline.twig' %}
+{% include 'website/widgets/usefullinks.twig' %}
+{% endblock %}

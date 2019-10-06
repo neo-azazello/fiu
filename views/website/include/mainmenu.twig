@@ -36,7 +36,7 @@
                                     <a href="#">Nizamnamə</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">Rəhbərlik</a>
+                                    <a href="{{path_for('rehberlik')}}">Rəhbərlik</a>
                                 </li>
                                <li class="menu-item">
                                     <a href="{{path_for('orgstructure')}}">Təşkilati struktur</a>
@@ -50,12 +50,24 @@
                             </ul>
                         </li>
 
-                        <li class="menu-item">
+                        
+                        <li class="menu-item ">
                             <a href="{{path_for('publications')}}">Hesabatlar və Nəşrlər</a>
                         </li>
-                        <li class="menu-item 
+                        
+                        
+                        <li class="menu-item menu-item-has-children 
                             {% if is_current_path('contact') %} current-menu-item current_page_item {% endif %}">
-                            <a href="{{path_for('contact')}}">Əlaqə</a>
+                            <a href="#">Əlaqə</a>
+
+                            <ul class="sub-menu">
+                                <li class="menu-item ">
+                                    <a href="{{path_for('contact')}}">Ümumi məlumatlar</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="{{path_for('depscontact')}}">Çalışanlar</a>
+                                </li>
+                            </ul>
                         </li>
 
                         <li class="menu-item d-sm-none d-md-block">

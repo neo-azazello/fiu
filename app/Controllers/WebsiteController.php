@@ -14,6 +14,11 @@ class WebsiteController extends Controller
         return $this->container->view->render($response, 'website/pages/contact.page.twig');
     }
 
+    public function depsContact($request, $response)
+    {
+        return $this->container->view->render($response, 'website/pages/depscontact.page.twig');
+    }
+
     public function orgstructure($request, $response)
     {
         return $this->container->view->render($response, 'website/aboutus/orgstructure.twig');
@@ -22,5 +27,20 @@ class WebsiteController extends Controller
     public function publications($request, $response)
     {
         return $this->container->view->render($response, 'website/hesabatlar/index.twig');
+    }
+
+    public function useful($request, $response)
+    {
+        return $this->container->view->render($response, 'website/pages/useful.twig');
+    }
+
+    public function rehberlik($request, $response)
+    {
+        return $this->container->view->render($response, 'website/pages/rehberlik.twig');
+    }
+
+    public function qebul($request, $response)
+    {
+        return $this->container->view->render($response, 'website/pages/qebul.page.twig');
     }
 }

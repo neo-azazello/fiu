@@ -1,0 +1,84 @@
+{% extends 'website/layout.twig' %}
+
+{% block content %}
+<div class="content-container">
+    <article>
+        <div class="panel-grid row">
+
+            <div class="col-md-12 panel-grid-cell">
+                <div class="so-panel panel-first-child panel-last-child">
+                    <h4 class="widget-title">Xarici dövlətlərin MMOları</h4>
+                    <div class="textwidget text-intro">
+                        kjkj
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 panel-grid-cell">
+                <div class="so-panel panel-first-child panel-last-child">
+                    <h4 class="widget-title">Beynəlxalq təşkilatlar</h4>
+                    <div class="textwidget text-intro">
+                        kjkj
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12 panel-grid-cell">
+                <div class="so-panel panel-first-child panel-last-child">
+                    <h4 class="widget-title">Nəzarət orqanları</h4>
+                    <div class="textwidget text-intro">
+                        kjkj
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12 panel-grid-cell">
+                <div class="so-panel panel-first-child panel-last-child">
+                    <h4 class="widget-title">Hüquq-mühafizə orqanları</h4>
+                    <div class="textwidget text-intro">
+                        kjkj
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12 panel-grid-cell">
+                <div class="so-panel panel-first-child panel-last-child">
+                    <h4 class="widget-title">Digər dövlət orqanları</h4>
+                    <div class="textwidget text-intro">
+                        kjkj
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </article>
+</div>
+{% endblock %}
+
+{% block sidebar %}
+<div class="widget  widget-skype">
+    <a class="skype-button" href="{{path_for('registry')}}">
+        <i class="fa fa-globe"></i>
+        <p class="skype-button__title">Elektron reyestr</p>
+    </a>
+</div>
+
+{% include 'website/include/sidebarmenu.twig' %}
+{% include 'website/widgets/qebul-qrafiki.twig' %}
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <a target="_blank" href="http://www.taxes.gov.az/modul.php?name=pages&amp;page=230">
+            <i class="fa fa-3x fa-book panel-icon" style="margin-right: 10px;"></i>
+            Maliyyə Monitorinqi Xidmətinin məlumat bazasına qoşulma qaydaları
+        </a>
+    </div>
+</div>
+
+{% include 'website/widgets/hotline.twig' %}
+{% include 'website/widgets/usefullinks.twig' %}
+{% endblock %}

@@ -4,7 +4,7 @@
 <div class="content-container">
 
     <div class="main-title">
-        <h1 class="main-title__primary">Əlaqə</h1>
+        <h1 class="main-title__primary">Maliyyə Monitorinqi İdarəsi</h1>
     </div>
 
     <article>
@@ -66,25 +66,35 @@
 
 
 
-
-            <div class="col-md-12 panel-grid-cell">
+            <div class="panel-grid row">
                 <div class="so-panel panel-first-child panel-last-child">
                     <h3 class="widget-title">Müraciət forması</h3>
                 </div>
-                <div class="textwidget">
-                    <div role="form" lang="en-US" dir="ltr">
-                        {% include 'website/widgets/contactform.twig'%}
+                <div class="col-md-8 panel-grid-cell">
+
+                    <div class="textwidget">
+                        <div role="form" lang="en-US" dir="ltr">
+                            {% include 'website/widgets/contactform.twig'%}
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 panel-grid-cell">
+                    <div class="textwidget ">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada nisi est, et ultricies
+                            ex ornare id. Ut in vestibulum lacus. Sed pulvinar, orci a vulputate posuere, ipsum justo
+                            vulputate elit, non scelerisque neque nulla a ligula. Suspendisse in maximus nibh, et
+                            interdum leo. Cras orci purus, tristique id malesuada eu, vehicula in massa. Pellentesque
+                            efficitur nibh at laoreet rutrum.
+                        </p>
                     </div>
                 </div>
 
             </div>
-
         </div>
 
     </article>
 
 </div>
-{% endblock %}
-{% block sidebar %}
-{% include 'website/widgets/qebul-qrafiki.twig' %}
 {% endblock %}

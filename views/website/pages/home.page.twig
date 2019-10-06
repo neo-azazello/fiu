@@ -149,7 +149,6 @@
 </div>
 
 {% include 'website/include/sidebarmenu.twig' %}
-
 {% include 'website/widgets/qebul-qrafiki.twig' %}
 
 <div class="panel panel-default">
@@ -161,11 +160,8 @@
     </div>
 </div>
 
-<div class="hotline">
-    <h3 class="hotline-name">
-        <p>Qaynar Xətt</p>
-        <span class="hotline-phone-number">(+994) 12 493 30 66</span>
-    </h3>
-</div>
+{% include 'website/widgets/hotline.twig' %} 
+{% include 'website/widgets/usefullinks.twig' %}
+
 
 {% endblock %}
