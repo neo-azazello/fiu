@@ -1,0 +1,12 @@
+{% include 'registry/include/header.twig' %}
+    <div class="ht-sitecontainer ">
+        <div class="site-header">
+            {% include 'registry/blocks/header.block.twig' %}
+            {% if is_current_path('registry') %}
+                {% include 'registry/blocks/bigsearch.block.twig' %}
+            {% endif %}
+        </div>
+        {% block addition %} {% endblock %}
+        {% block content %} {% endblock %}
+
+{% include 'registry/include/footer.twig' %}

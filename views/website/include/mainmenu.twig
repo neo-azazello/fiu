@@ -1,0 +1,72 @@
+<div class="container">
+    <header class="header">
+        <div class="logo">
+            <a href="{{base_url()}}">
+                <img src="{{base_url()}}/assets/images/logo_new.png" alt="MentalPress"
+                    srcset="{{base_url()}}/assets/images/logo_new.png  2x" class="img-responsive"
+                    width="360" height="90">
+            </a>
+        </div>
+
+        <a href="#" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggle__text">MENU</span>
+            <span class="navbar-toggle__icon-bar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+        </a>
+
+        <div class="header-widgets">
+            <div class="widget_nav_menu">
+                <div id="navbar" class="navbar-top-collapse collapse">
+                    <ul id="menu-main-menu" class="menu">
+                        <li class="menu-item 
+                            {% if is_current_path('home') %} current-menu-item current_page_item {% endif %}">
+                            <a href="{{path_for('home')}}">Ana səhifə</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Haqqımızda</a>
+
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="#">Ümumi məlumat</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Nizamnamə</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Rəhbərlik</a>
+                                </li>
+                               <li class="menu-item">
+                                    <a href="{{path_for('orgstructure')}}">Təşkilati struktur</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Karyera imkanları</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Satınalmalar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item">
+                            <a href="{{path_for('publications')}}">Hesabatlar və Nəşrlər</a>
+                        </li>
+                        <li class="menu-item 
+                            {% if is_current_path('contact') %} current-menu-item current_page_item {% endif %}">
+                            <a href="{{path_for('contact')}}">Əlaqə</a>
+                        </li>
+
+                        <li class="menu-item d-sm-none d-md-block">
+                            <a href="#" class="search_button" onclick="openSearch()"><i class="fa fa-search"></i></a>
+                            {% include 'website/include/searchbox.twig'%}
+                            
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+</div>

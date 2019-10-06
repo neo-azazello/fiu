@@ -1,0 +1,90 @@
+{% extends 'website/fullwidthlayout.twig' %}
+
+{% block content %}
+<div class="content-container">
+
+    <div class="main-title">
+        <h1 class="main-title__primary">Əlaqə</h1>
+    </div>
+
+    <article>
+
+        <div class="panel-grid row m-b-0">
+
+            <div class="col-md-12 panel-grid-cell" style="margin-bottom: 25px">
+
+                <div class="textwidget">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <a class="icon-set-contact"><i class="fa fa-map-marker"></i></a>
+                            <p>Bül-Bül prospekti 40,<br> Bakı şəhəri, Azərbaycan Respublikası</p>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <a class="icon-set-contact"><i class="fa fa-phone"></i></a>
+                            <p>Tel.: (+994 12) 598-19-46; <br> Fax: (+994 12) 493-03-88;</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <a class="icon-set-contact"><i class="fa fa-envelope"></i></a>
+                            <p>office@fiu.az</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-12 panel-grid-cell" style="margin-bottom: 25px">
+
+                <div class="textwidget">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=Maliyy%C9%99%20Monitorinqi%20Xidm%C9%99ti&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/">nordvpn coupon</a></div>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 400px;
+                                width: 100%;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 400px;
+                                width: 100%;
+                            }
+                        </style>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-md-12 panel-grid-cell">
+                <div class="so-panel panel-first-child panel-last-child">
+                    <h3 class="widget-title">Müraciət forması</h3>
+                </div>
+                <div class="textwidget">
+                    <div role="form" lang="en-US" dir="ltr">
+                        {% include 'website/widgets/contactform.twig'%}
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</div>
+{% endblock %}
+{% block sidebar %}
+{% include 'website/widgets/qebul-qrafiki.twig' %}
+{% endblock %}

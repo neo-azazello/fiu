@@ -1,0 +1,5 @@
+settings/params.php
+error_log
+.vscode
+uploads/
+.htaccess

@@ -1,0 +1,32 @@
+{% include 'website/include/header.twig' %}
+{% include 'website/include/topbar.twig' %}
+{% include 'website/include/mainmenu.twig' %}
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-xs-12 d-sm-yes">
+            <form id="custom-search-form" class="">
+                <div class="search-query-wrapper">
+                    <input type="text" class="search-query" placeholder="Search">
+                    <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+
+        {#THE BLOCK OF MAIN CONTENT#}
+        <div class="col-xs-12  col-md-9" role="main">
+            {% block content %} {% endblock %}
+        </div>
+
+        {#THE BLOCK OF SIDEBAR#}
+        <div class="col-xs-12  col-md-3">
+            <div class="sidebar">
+                {% block sidebar %} {% endblock %}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% include 'website/include/footer.twig'%}
