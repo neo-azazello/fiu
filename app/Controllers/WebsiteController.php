@@ -43,4 +43,19 @@ class WebsiteController extends Controller
     {
         return $this->container->view->render($response, 'website/pages/qebul.page.twig');
     }
+
+    public function emekdashliq($request, $response)
+    {
+        return $this->container->view->render($response, 'website/pages/emekdashliqetmeyen.twig');
+    }
+
+    public function qoshulmaq($request, $response)
+    {
+        return $this->container->view->render($response, 'website/pages/qoshulmaq.twig');
+    }
+
+    public function generalinfo($request, $response)
+    {
+        return $this->container->view->render($response, 'website/aboutus/generalinfo.twig');
+    }
 }

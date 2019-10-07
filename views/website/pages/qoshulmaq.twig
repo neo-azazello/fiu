@@ -1,0 +1,80 @@
+{% extends 'website/layout.twig' %}
+
+{% block content %}
+<div class="content-container">
+
+    <div class="main-title">
+        <h1 class="main-title__primary">
+            Maliyyə Monitorinqi Xidmətinin məlumat bazasına qoşulma qaydaları
+        </h1>
+    </div>
+
+    <article>
+        <div class="panel-grid row">
+
+            <div class="col-md-12 panel-grid-cell">
+                <div class="so-panel panel-first-child panel-last-child">
+                    <div class="textwidget text-intro">
+
+                        <h3>H&ouml;rmətli həmkarlar!</h3>
+                        <h4>Azərbaycan Respublikasının Maliyyə Monitorinqi Xidmətinin məlumat bazasına qoşulmaq
+                            &uuml;&ccedil;&uuml;n ardıcıl olaraq aşağıdakı addımlar atılmalıdır:</h4>
+                        <h4>1) Azərbaycan Respublikasının Mərkəzi Bankının&nbsp;<a href="https://bsxm.e-cbar.az/"
+                                target="_blank" rel="noopener">Bank Sertfikat Xidmətləri Mərkəzindən</a>&nbsp;elektron
+                            sertifikatı əldə etmək.</h4>
+                        <h4>Elektron sertifikatın əldə edilməsi &uuml;&ccedil;&uuml;n aşağıdakı linklərə daxil olub
+                            təlimatı oxumaq t&ouml;vsiyə edilir.</h4>
+                        <p>▷<a href="https://bsxm.e-cbar.az/Document/Getcert" target="_blank"
+                                rel="noopener">&nbsp;Sertifikatı necə əldə etməli</a><br />▷&nbsp;<a
+                                href="https://bsxm.e-cbar.az/downloads/documents/Sertifikat%20sor%C4%9Fusunun%20yarad%C4%B1lmas%C4%B1_huquqi.pdf"
+                                target="_blank" rel="noopener">Sertifikat sorğusunun yaradılması-H&uuml;quqi şəxslər
+                                &uuml;&ccedil;&uuml;n Təlimat</a><br />▷&nbsp;<a
+                                href="https://bsxm.e-cbar.az/downloads/documents/Onlayn%20a%C3%A7ar%20generatoru%20%C3%BCzr%C9%99%20istifad%C9%99%C3%A7i%20t%C9%99limat%C4%B1.pdf"
+                                target="_blank" rel="noopener">Onlayn a&ccedil;ar generatorunun quraşdırılması &uuml;zrə
+                                Təlimat</a><br />▷&nbsp;<a
+                                href="https://bsxm.e-cbar.az/downloads/documents/Java%20Onlayn%20Sor%C4%9Fu%20generatoru%20%C3%BCzr%C9%99%20T%C9%99limat.pdf"
+                                target="_blank" rel="noopener">Java Onlayn Sorğu generatoru &uuml;zrə
+                                Təlimat</a><br />▷&nbsp;<a
+                                href="https://bsxm.e-cbar.az/downloads/documents/ACOS5%20Client%20Kit%20Drayverl%C9%99rinin%20qura%C5%9Fd%C4%B1r%C4%B1lmas%C4%B1%20%C3%BCzr%C9%99%20istifad%C9%99%C3%A7i%20t%C9%99limat%C4%B1.pdf"
+                                target="_blank" rel="noopener">ACOS5 Client Kit Drayverlərinin quraşdırılması &uuml;zrə
+                                Təlimat</a><br />▷&nbsp;<a
+                                href="https://bsxm.e-cbar.az/downloads/documents/K%C3%B6k%20sertifikatlar%C4%B1n%20qura%C5%9Fd%C4%B1r%C4%B1lmas%C4%B1%20%C3%BCzr%C9%99%20istifad%C9%99%C3%A7i%20t%C9%99limat%C4%B1%20.pdf"
+                                target="_blank" rel="noopener">K&ouml;k sertifikatların quraşdırılması &uuml;zrə
+                                Təlimat</a></p>
+                        <h4>2)&nbsp;<a href="http://www.fiu.az/aze/wp-content/uploads/2019/05/Goaml.pdf" target="_blank"
+                                rel="noopener">Elektron sertifikatın komp&uuml;terə y&uuml;klənməsindən sonra Azərbaycan
+                                Respublikasının Maliyyə Monitorinqi Xidmətinin GoAml məlumat bazasında qeydiyyatdan
+                                ke&ccedil;mək.</a></h4>
+                        <h4>3)&nbsp;<a
+                                href="http://www.fiu.az/aze/wp-content/uploads/2019/05/N%C3%BCm%C3%BCn%C9%99_m%C9%99ktub.doc"
+                                target="_blank" rel="noopener">Azərbaycan Respublikasının Maliyyə Monitorinqi Xidmətinə
+                                Məsul şəxsin təyin edilməsi ilə bağlı məktub g&ouml;ndərmək.</a></h4>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+</div>
+
+
+
+{% endblock %}
+
+{% block sidebar %}
+<div class="widget  widget-skype">
+    <a class="skype-button" href="{{path_for('registry')}}">
+        <i class="fa fa-globe"></i>
+        <p class="skype-button__title">Elektron reyestr</p>
+    </a>
+</div>
+
+{% include 'website/include/sidebarmenu.twig' %}
+{% include 'website/widgets/qebul-qrafiki.twig' %}
+
+{% include 'website/widgets/goaml.twig' %}
+
+{% include 'website/widgets/hotline.twig' %}
+{% include 'website/widgets/usefullinks.twig' %}
+{% endblock %}

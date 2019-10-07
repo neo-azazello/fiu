@@ -1,0 +1,88 @@
+{% extends 'website/layout.twig' %}
+
+{% block content %}
+<div class="content-container">
+
+    <div class="main-title">
+        <h1 class="main-title__primary">
+            Maliyyə Monitorinqi Xidməti
+        </h1>
+        {% include 'website/include/download_page.twig' %}
+    </div>
+
+    <article>
+        <div class="panel-grid row">
+
+            <div class="col-md-12 panel-grid-cell">
+                <div class="so-panel panel-first-child panel-last-child">
+                    <div class="textwidget text-intro">
+
+                        <h3>Biz kimik?</h3>
+                        <p>Maliyyə Monitorinqi Xidməti Azərbaycan Respublikası Mərkəzi Bankının yanında m&uuml;stəqil
+                            struktur vahidi olaraq Azərbaycan Respublikası Prezidentinin 2009-cu il 23 fevral tarixli 66
+                            n&ouml;mrəli Fərmanı ilə yaradılmışdır.</p>
+                        <p>Azərbaycan Respublikası Prezidentinin 2018-cı il 25 may tarixli 95 n&ouml;mrəli Fərmanına
+                            uyğun olaraq, cinayət yolu ilə əldə edilmiş pul vəsaitlərinin və ya digər əmlakın
+                            leqallaşdırılmasına və terror&ccedil;uluğun maliyyələşdirilməsinə qarşı m&uuml;barizə
+                            sahəsində həyata ke&ccedil;irilən tədbirlərdə d&ouml;vlət qurumlarının potensialının
+                            g&uuml;cləndirilməsi və bu sahədə fəaliyyətin effektiv əlaqələndirilməsini təmin edən
+                            koordinasiya mexanizminin yaradılması, onlar arasında əməkdaşlığın və məlumat
+                            m&uuml;badiləsi sisteminin səmərəliliyinin artırılması, beynəlxalq əməkdaşlığın
+                            genişləndirilməsi məqsədi ilə m&uuml;stəqil Maliyyə Monitorinqi Xidməti publik h&uuml;quqi
+                            şəxs yaradılmışdır.</p>
+                        <p>Maliyyə Monitorinqi Xidməti cinayət yolu ilə əldə edilmiş pul vəsaitlərinin və ya digər
+                            əmlakın leqallaşdırılması və terror&ccedil;uluğun maliyyələşdirilməsinin qarşısının alınması
+                            sahəsində qanunvericiliklə m&uuml;əyyən edilmiş səlahiyyətləri həyata ke&ccedil;irən, habelə
+                            m&uuml;vafiq sahədə siyasətin formalaşmasında iştirak edən orqandır.</p>
+                        <h3>Funksiyalarımız</h3>
+                        <p>Maliyyə Monitorinqi Xidməti:</p>
+                        <ul>
+                            <li class="first-child">vahid siyasətin formalaşmasında və bu siyasətin həyata
+                                ke&ccedil;irilməsində iştirak edir;</li>
+                            <li>tənzimləməni və nəzarəti həyata ke&ccedil;irir;</li>
+                            <li>milli risk qiymətləndirilməsini həyata ke&ccedil;irir, bu istiqamətdə d&ouml;vlət
+                                orqanlarının və qurumlarının fəaliyyətini əlaqələndirir;</li>
+                            <li>monitorinq iştirak&ccedil;ılarının, monitorinqdə iştirak edən digər şəxslərin, nəzarət
+                                və digər d&ouml;vlət orqanlarının fəaliyyətini əlaqələndirir, onlardan daxil olan
+                                məlumatları toplayır və təhlil edir;</li>
+                            <li>vahid informasiya sisteminin tətbiqini təmin edir;</li>
+                            <li>normativ xarakterli aktlar qəbul edir və m&uuml;vafiq h&uuml;quqi aktların layihələrinin
+                                hazırlanmasında iştirak edir;</li>
+                            <li class="last-child">PL/TMM sisteminin inkişafını təmin edir.</li>
+                        </ul>
+                        <h3>Missiyamız</h3>
+                        <p>Monitorinq subyektlərindən məlumatların əldə edilməsi, təhlili və m&uuml;badiləsi vasitəsilə
+                            cinayət yolu ilə əldə edilmiş pul vəsaitlərinin və ya digər əmlakın leqallaşdırılmasına və
+                            terror&ccedil;uluğun maliyyələşdirilməsinə qarşı m&uuml;barizəyə dəstək verməkdir.</p>
+                        <h3>Strateji baxışımız</h3>
+                        <p>Maliyyə Monitorinqi Xidmətini m&uuml;asir tələblərə cavab verən maliyyə monitorinqi orqanına
+                            &ccedil;evirməkdir.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+</div>
+
+
+
+{% endblock %}
+
+{% block sidebar %}
+<div class="widget  widget-skype">
+    <a class="skype-button" href="{{path_for('registry')}}">
+        <i class="fa fa-globe"></i>
+        <p class="skype-button__title">Elektron reyestr</p>
+    </a>
+</div>
+
+{% include 'website/include/sidebarmenu.twig' %}
+{% include 'website/widgets/qebul-qrafiki.twig' %}
+
+{% include 'website/widgets/goaml.twig' %}
+
+{% include 'website/widgets/hotline.twig' %}
+{% include 'website/widgets/usefullinks.twig' %}
+{% endblock %}

@@ -385,9 +385,8 @@ html {
 
 body {
   font-family: "Merriweather", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.6;
-  /* color: #919699; */
   background-color: #f2f4f7;
 }
 
@@ -7005,6 +7004,7 @@ html.flexbox .page-box--inline .page-box__title {
   color: #414447;
   margin-top: 0;
   margin-bottom: 30px;
+  display: inline-block;
 }
 
 .main-title__secondary {
@@ -8271,7 +8271,8 @@ input[type="date"] {
 .alert-danger {
   background-color: #ffe5e5;
   border: 2px solid #ffe5e5;
-  color: #e50000;
+  color: #284767;
+  font-weight: bold;
 }
 
 .alert-success {
@@ -13066,4 +13067,9 @@ button.close {
   .modal-lg {
     width: 900px
   }
+}
+
+.export-icons {
+  display: inline-block;
+  float: right;
 }

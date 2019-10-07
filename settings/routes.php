@@ -9,6 +9,9 @@ $app->get('/publications', 'WebsiteController:publications')->setName('publicati
 $app->get('/useful', 'WebsiteController:useful')->setName('useful');
 $app->get('/rehberlik', 'WebsiteController:rehberlik')->setName('rehberlik');
 $app->get('/qebul', 'WebsiteController:qebul')->setName('qebul');
+$app->get('/nocooperate', 'WebsiteController:emekdashliq')->setName('emekdashliq');
+$app->get('/qoshulmaq', 'WebsiteController:qoshulmaq')->setName('qoshulmaq');
+$app->get('/generalinfo', 'WebsiteController:generalinfo')->setName('generalinfo');
 
 $app->get('/registry', 'RegistryController:index')->setName('registry');
 $app->get('/registry/content', 'RegistryController:content')->setName('content');
