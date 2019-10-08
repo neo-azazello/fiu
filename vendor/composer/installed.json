@@ -321,17 +321,17 @@
     },
     {
         "name": "nesbot/carbon",
-        "version": "2.24.0",
-        "version_normalized": "2.24.0.0",
+        "version": "2.25.1",
+        "version_normalized": "2.25.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/briannesbitt/Carbon.git",
-            "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29"
+            "reference": "d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/934459c5ac0658bc765ad1e53512c7c77adcac29",
-            "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29",
+            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1",
+            "reference": "d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1",
             "shasum": ""
         },
         "require": {
@@ -347,7 +347,7 @@
             "phpunit/phpunit": "^7.5 || ^8.0",
             "squizlabs/php_codesniffer": "^3.4"
         },
-        "time": "2019-08-31T16:37:55+00:00",
+        "time": "2019-10-05T15:52:23+00:00",
         "bin": [
             "bin/carbon"
         ],
@@ -380,7 +380,7 @@
                 "homepage": "http://github.com/kylekatarnls"
             }
         ],
-        "description": "A API extension for DateTime that supports 281 different languages.",
+        "description": "An API extension for DateTime that supports 281 different languages.",
         "homepage": "http://carbon.nesbot.com",
         "keywords": [
             "date",
@@ -1202,17 +1202,17 @@
     },
     {
         "name": "twig/twig",
-        "version": "v2.11.3",
-        "version_normalized": "2.11.3.0",
+        "version": "v2.12.0",
+        "version_normalized": "2.12.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/twigphp/Twig.git",
-            "reference": "699ed2342557c88789a15402de5eb834dedd6792"
+            "reference": "c7a85fd08348ca04b4d8f234f49583d9910906aa"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twigphp/Twig/zipball/699ed2342557c88789a15402de5eb834dedd6792",
-            "reference": "699ed2342557c88789a15402de5eb834dedd6792",
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/c7a85fd08348ca04b4d8f234f49583d9910906aa",
+            "reference": "c7a85fd08348ca04b4d8f234f49583d9910906aa",
             "shasum": ""
         },
         "require": {
@@ -1222,14 +1222,14 @@
         },
         "require-dev": {
             "psr/container": "^1.0",
-            "symfony/debug": "^2.7",
-            "symfony/phpunit-bridge": "^3.4.19|^4.1.8|^5.0"
+            "symfony/debug": "^3.4|^4.2",
+            "symfony/phpunit-bridge": "^4.4@dev|^5.0"
         },
-        "time": "2019-06-18T15:37:11+00:00",
+        "time": "2019-10-05T16:42:38+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.11-dev"
+                "dev-master": "2.12-dev"
             }
         },
         "installation-source": "dist",
@@ -1253,14 +1253,14 @@
                 "role": "Lead Developer"
             },
             {
-                "name": "Armin Ronacher",
-                "email": "armin.ronacher@active-4.com",
-                "role": "Project Founder"
-            },
-            {
                 "name": "Twig Team",
                 "homepage": "https://twig.symfony.com/contributors",
                 "role": "Contributors"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com",
+                "role": "Project Founder"
             }
         ],
         "description": "Twig, the flexible, fast, and secure template language for PHP",

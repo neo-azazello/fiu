@@ -13073,3 +13073,126 @@ button.close {
   display: inline-block;
   float: right;
 }
+
+
+
+.columnar-2 {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+}
+
+.columnar {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+}
+
+.columnar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.home-sections li {
+  margin-bottom: -30px;
+}
+
+.columnar>li {
+  column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  page-break-inside: avoid;
+  padding: 5px;
+  padding-bottom: 20px;
+}
+
+.home-sections li .card {
+  padding: 21px 10px 20px 80px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+.package-widget-with-logo {
+  padding-left: 60px;
+}
+
+.package-widget-with-logo .package-logo {
+  margin-left: -60px;
+  margin-bottom: -50px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.package-widget h3,
+.package-widget h3 a {
+  font-size: 17px;
+  line-height: 26px;
+  overflow: visible;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.package-widget h3,
+.package-widget h3 a {
+  overflow: hidden !important;
+}
+
+.package-widget h3,
+.package-widget h3 a,
+.package-widget p {
+  white-space: nowrap;
+  overflow-x: hidden !important;
+  text-overflow: ellipsis;
+}
+
+
+.float_social {
+  z-index: 10;
+  display: block;
+  border: 1px solid #ddd;
+  position: fixed;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  right: -2px;
+  top: 250px;
+  background: #fff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.float_social a {
+  display: block;
+  padding: 3px 3px;
+}
+
+#social-logo a {
+  margin-right: 5px;
+}
+
+#social-logo a:hover {
+  -webkit-animation: rotateIn 1s;
+  animation: rotateIn 1s;
+}
